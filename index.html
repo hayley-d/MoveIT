@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Components</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <style>
+.description{
+  display: flex;
+  flex-direction: column;
+  gap:30px;
+  height:30%;
+  width:40%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left:30%;
+  margin-right:30%;
+  margin-top:5%;
+}
+
+.title h1{
+  font-weight: bold;
+  font-size: 60px;
+}
+
+.content-desc p{
+  font-size: large;
+}
+.btns{
+  display: flex;
+  gap:20px;
+}
+
+.center-items{
+  display: flex;
+  flex-direction: column;
+  gap:50px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.moving-picture{
+  background-image: url("moving-van.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width:700px;
+  height:300px;
+  border-radius: 10px;
+}
+.reasons-for-service{
+
+  display: grid;
+  grid-template-rows: 100px 500px 500px;
+  grid-template-columns: repeat(3,500px);
+  gap:40px;
+}
+
+.moving-title{
+  grid-column: span 3;
+}
+
+#carouselExampleIndicators{
+  grid-column: span 3;
+}
+
+.icon-desc{
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+}
+
+.icon-desc > div > svg{
+  width:60px;
+  height:70px;
+}
+
+.link-btn > svg{
+  width:1px;
+  height:1px;
+}
+
+.icon-desc p {
+  text-align: left;
+}
+
+.container{
+  grid-column: span 3;
+  height:600px;
+  overflow: hidden;
+  width:100%;
+}
+
+.family-img{
+  background-image: url("dog.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  width:100%;
+height: 100%;
+
+  border-radius: 15px;
+}
+
+.footer{
+  display: grid;
+  gap:50px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 200px;
+  justify-content: center;
+
+}
+
+.footer  h4{
+  font-size: 16px;
+  font-weight: lighter;
+}
+
+.footer  h3{
+  font-size: 18px;
+
+}
+.section{
+  justify-content: center;
+  align-items: center;
+}
+.section svg{
+  width:70px;
+  height:80px;
+}
+  </style>
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-seam" viewBox="0 0 16 16">
+      <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l2.404.961L10.404 2l-2.218-.887zm3.564 1.426L5.596 5 8 5.961 14.154 3.5l-2.404-.961zm3.25 1.7-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923l6.5 2.6zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464L7.443.184z"/>
+    </svg>MoveIt</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Services
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Move</a></li>
+            <li><a class="dropdown-item" href="#">Deliver</a></li>
+            <li><a class="dropdown-item" href="#">Rent</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <form class="d-flex" role="search">
+    <input class="form-control me-2" type="search" placeholder="Postal code" aria-label="Search">
+    <button class="btn btn-outline-success" type="submit">Search</button>
+  </form>
+</nav>
+
+<div class = "content">
+  <div class = "description">
+    <div class = "title"><h1>Move With Joy</h1></div>
+    <div class = "content-desc">
+      <p>Welcome to our website, where we are on a mission to provide exceptional moving services to customers in the US.
+        As a startup, we believe that moving doesn't have to be stressful or complicated, and we are passionate about making the
+        process as seamless and enjoyable as possible.
+    </p>
+    </div>
+  </div>
+<br>
+  <div class = "center-items">
+    <div class = "btns">
+      <button type="button" class="btn btn-primary btn-lg">Get A Quote</button>
+      <button type="button" class="btn btn-outline-secondary btn-lg">Contact Us</button>
+    </div>
+    <div class = "moving-picture"></div>
+    <div class = "reasons-for-service">
+      <div class = "moving-title"><h2>Why Move with Us?</h2><hr></div>
+      <div class = "icon-desc">
+        <div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-briefcase" viewBox="0 0 16 16">
+          <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5zm1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0zM1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5z"/>
+        </svg></div>
+        <div><h3>Professional</h3></div>
+        <div><p>Our team of professional movers are trained to prioritize efficiency, organization, and attention to detail. We understand that your possessions are more than just objects - they are a reflection of your life, memories, and experiences. That's why we take extra care to ensure that everything is packed and transported with the utmost care and attention.</p></div>
+        <div class = "link-btn"><button type="button" class="btn btn-link">Get A Quote</button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+        </svg></div>
+      </div>
+      <div class = "icon-desc">
+        <div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-truck-front" viewBox="0 0 16 16">
+          <path d="M5 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm8 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm-6-1a1 1 0 1 0 0 2h2a1 1 0 1 0 0-2H7ZM4 2a1 1 0 0 0-1 1v3.9c0 .625.562 1.092 1.17.994C5.075 7.747 6.792 7.5 8 7.5c1.208 0 2.925.247 3.83.394A1.008 1.008 0 0 0 13 6.9V3a1 1 0 0 0-1-1H4Zm0 1h8v3.9c0 .002 0 .001 0 0l-.002.004a.013.013 0 0 1-.005.002h-.004C11.088 6.761 9.299 6.5 8 6.5s-3.088.26-3.99.406h-.003a.013.013 0 0 1-.005-.002L4 6.9c0 .001 0 .002 0 0V3Z"/>
+          <path d="M1 2.5A2.5 2.5 0 0 1 3.5 0h9A2.5 2.5 0 0 1 15 2.5v9c0 .818-.393 1.544-1 2v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5V14H5v1.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2a2.496 2.496 0 0 1-1-2v-9ZM3.5 1A1.5 1.5 0 0 0 2 2.5v9A1.5 1.5 0 0 0 3.5 13h9a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 12.5 1h-9Z"/>
+        </svg></div>
+        <div><h3>Countrywide</h3></div>
+        <div><p>We offer a range of services to suit your individual needs, whether you're moving locally or across the country. Our team can handle everything from packing and loading to unloading and unpacking, so you can focus on settling into your new home. And with our transparent pricing and no hidden fees, you can trust that you're getting a fair and competitive rate for our services.</p></div>
+        <div class = "link-btn"><button type="button" class="btn btn-link">Get A Quote</button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+        </svg></div>
+      </div>
+      <div class = "icon-desc">
+        <div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-left-heart" viewBox="0 0 16 16">
+          <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12ZM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2Z"/>
+          <path d="M8 3.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
+        </svg></div>
+        <div><h3>Personal Touch</h3></div>
+        <div><p>At our core, we believe that moving should be an exciting and positive experience, not a stressful one. By providing exceptional moving services in the US, we hope to revolutionize the way people think about moving and provide a better, more personalized experience for our customers. Contact us today to learn more about how we can help you with your next move.</p></div>
+        <div class = "link-btn"><button type="button" class="btn btn-link">Get A Quote</button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+        </svg></div>
+      </div>
+      <div class = "container">
+        <div class = "family-img"></div>
+      </div>
+      <br>
+      <br>
+
+    </div>
+    <div style="width:100%; height:20px;"><hr></div>
+    <div class = "footer">
+
+      <div class = "section">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-boxes" viewBox="0 0 16 16">
+        <path d="M7.752.066a.5.5 0 0 1 .496 0l3.75 2.143a.5.5 0 0 1 .252.434v3.995l3.498 2A.5.5 0 0 1 16 9.07v4.286a.5.5 0 0 1-.252.434l-3.75 2.143a.5.5 0 0 1-.496 0l-3.502-2-3.502 2.001a.5.5 0 0 1-.496 0l-3.75-2.143A.5.5 0 0 1 0 13.357V9.071a.5.5 0 0 1 .252-.434L3.75 6.638V2.643a.5.5 0 0 1 .252-.434L7.752.066ZM4.25 7.504 1.508 9.071l2.742 1.567 2.742-1.567L4.25 7.504ZM7.5 9.933l-2.75 1.571v3.134l2.75-1.571V9.933Zm1 3.134 2.75 1.571v-3.134L8.5 9.933v3.134Zm.508-3.996 2.742 1.567 2.742-1.567-2.742-1.567-2.742 1.567Zm2.242-2.433V3.504L8.5 5.076V8.21l2.75-1.572ZM7.5 8.21V5.076L4.75 3.504v3.134L7.5 8.21ZM5.258 2.643 8 4.21l2.742-1.567L8 1.076 5.258 2.643ZM15 9.933l-2.75 1.571v3.134L15 13.067V9.933ZM3.75 14.638v-3.134L1 9.933v3.134l2.75 1.571Z"/>
+      </svg>
+      </div>
+      <div class = "section">
+        <h3>Pages</h3>
+        <hr>
+        <h4>Home</h4>
+        <h4>Features</h4>
+        <h4>Pricing</h4>
+        <h4>FAQs</h4>
+        <h4>About</h4>
+      </div>
+      <div class = "section">
+        <h3>Moving with us</h3>
+        <hr>
+        <h4>Pricing</h4>
+        <h4>FAQs</h4>
+      </div>
+      <div class = "section">
+        <h3>Help</h3>
+        <hr>
+        <h4>067 415 2597</h4>
+        <h4>email: moveit@gmail.com</h4>
+        <h4>Customer Help Service</h4>
+        <h4>FAQs</h4>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+</body>
+
+</html>
